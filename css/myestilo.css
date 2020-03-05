@@ -1,0 +1,175 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan', sans-serif;
+}
+
+#parte_superior
+{
+    display: flex;
+    background: #0066D9;
+    color: #fff;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 1px;
+    
+}
+
+#parte_superior_izquierda
+{
+   margin-top: 10px;
+   margin-left: 50px;
+}
+
+#parte_superior_derecha
+{
+   margin-top: 10px;
+   margin-right: 50px;
+}
+
+
+#parte_superior_derecha a
+{
+  margin: 5px;
+}
+
+#parte_superior_derecha a i
+{
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
+#parte_superior_derecha a i:hover
+{
+    color: #ABABAB;
+}
+
+
+/*-------------------Icono y menu----------------------------------------------*/
+
+#menu
+{
+    display: flex;
+    border-bottom:solid #ABABAB 1px ;
+    margin-bottom: 10px;
+    padding: 0;
+    justify-content: space-between;
+    
+}
+
+#menu #icono
+{
+    margin-left: 50px;
+}
+
+#menu #icono img
+{  
+    width: 120px;
+    height: 130px;  
+}
+
+
+#menu #menu_eleccion
+{
+    margin-right: 50px;
+}
+ 
+.navegacion
+{
+    width: 1000px;
+    margin: 30px auto;
+    background: #fff;
+}
+
+.navegacion ul
+{
+    list-style: none;
+}
+
+.select
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.select > li
+{  
+    margin:0;
+    display:inline-block;
+}
+
+.select > li > a
+{
+    display:block;
+    padding: 15px 20px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    
+}
+
+.select li a:hover
+{
+    color: #0066D9;
+    transition:all .3s;
+}
+
+/*-------------Banner--------------------------------------*/
+
+header
+{
+    width: 95%;
+    margin: 0 auto;
+}
+
+#titulo
+{
+    text-align: center;
+}
+
+.banner
+{
+    position: relative;
+    width: 100%;
+    height:calc(100vh - 50px);
+    background-color:#F5F5F5;
+    background-size: cover;
+    background-position: center;
+    transition: all .1s ease-in-out;
+}
+
+/*------------Datos Generales de mis departamentos--------*/
+
+
+/*-------------------Footer-------------------------------*/
+
+.footer
+{
+    width: 100%;
+    text-align: center;
+}
+
+.footer p
+{
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.footer a i
+{
+    
+    font-size: 30px;
+    margin:5px ;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
