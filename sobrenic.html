@@ -1,10 +1,3 @@
-<?php
-
-		include("utils/conexion.php");
-		$sql = "SELECT * FROM tbl_departamentos";
-		$peticion = mysql_query($sql,$conexion);
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,71 +19,50 @@
 </head>
 <body>
      <div data-role="page" data-theme="c" id="p1">
-     <div data-role="header" data-theme="c" data-position="fixed">
      <!------------------Parte superior de contacto------------------>
-      
-     <div id="parte_superior">
+     <div data-role="header" data-theme="c" data-position="fixed">
 
-              <a href="#"><i class="fa fa-facebook-official"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-              <a href="#"><i class="fa fa-youtube-play"></i></a>
-
-     </div>
 
      <!----------------Icono y Menu-------------------------------->
 
      <div id="menu">
         <div id="icono">
-              <img src="img/cafe.png" alt="">
+             <a href="index.php"> <img src="img/cafe.png" style="width: 50px; height: 50px">
+             </a>
         </div>
-
-        <h2 id="titulo" style="font-weight: bold; font-family: 'Trade Winds', cursive;">Ruta del Cafe</h2>
 
         <div id="menu_eleccion">
           <nav class="navegacion">
-            <ul data-role="listview" data-inset="true" data-theme="c">
-                <li><a href="sobrenic.html">Sobre Nicaragua</a></li>
+            <ul class="select" data-role="listview" data-inset="true"  data-theme="c">
+                <li><a href="sobrenic.html"  data-icon="grid">Sobre Nicaragua</a></li>
             </ul>
           </nav>
         </div>
 
      </div>
-
-     <!------------------------------------------------------------>
-     
      </div>
+
+     
+
 
      <header>
-     
+     <h2 id="titulo">Ruta del Cafe Nicaragua</h2>
 
      <section class="banner">
-         <div class="banner-content">
-             <h2>Esto es la Ruta del cafe</h2>
+        <div class="banner-content">
+            <h2>Esto es la Ruta del cafe</h2>
 
-         </div>
-     </section>
+        </div>
+    </section>
 
-     <div id="content-departamentos">
-     <ul  class="nav-dep" data-role="listview" data-inset="true"  data-theme="b">
-     <!--------------Lista de departamentos------------------>
+        <div>
+            <br>
+            <h1>La “Ruta del Café Nicaragua”</h1>
+            
+            <p style="text-align:justify;">Es una ruta turística que abarca los cinco departamentos de la región Norte Central de Nicaragua: Estelí, Jinotega, Madriz, Matagalpa y Nueva Segovia. Conocido como Región de montañas frescas y bosques de nebliselva, el Norte es mucho más: son tradiciones vivas con sus mazurkas y polkas, artesanos del barro, de la piedra de marmolina, de la tusa, son productos de excepción como el Café, el Tabaco o sus famosas rosquillas somoteñas.</p>
 
-        <?php
-                while ($fila = mysql_fetch_array($peticion))
-                {                         
-                        echo '        
-                        <li>
-                            <a href="Detalle_Depart.php?iddepartamento='.$fila["iddepartamento"].'">
-                            '.utf8_encode($fila["nombre"]).'
-                            </a>
-                        </li>
-                           
-                ';}
-        ?>
-     
-     <!------------------------------------------------------>
-     </ul>
-     </div>
+            <p style="text-align:justify;">En Matagalpa, el viajero podrá descubrir los hechos históricos vinculados con la producción del tabaco en el Museo Nacional del Café;  Jinotega es el departamento con mayor producción de café del país, destacado por su excelencia y calidad; y en Estelí, ubicado en las proximidades de varios parques naturales (Cerro Tisey-La Estanzuela, Miraflores-Moropolente, Canta-Gallo, y La Patasta) sólo tendrá que decidir por cuál de ellos pasear y disfrutar de la belleza y riqueza natural del entorno. En Madriz no puede perderse sus típicas rosquillas –producto icónico de la comarca, sin duda el mejor acompañamiento a una buena taza de café– y Nueva Segovia, se caracteriza por su historia colonial, revolucionaria, y variada artesanía producto de una población indígena activa.</p>
+        </div>
 
      </header>
 
@@ -103,8 +75,15 @@
          <a href="#"><i class="fa fa-youtube-play" style="color:#FF0000"></i></a>
 
      </footer>
-     </div>
-     
+
+     <div data-role="footer" data-position="fixed" data-theme="b">
+        <div data-role="navbar">
+        <ul>
+            <li><a href="#" data-rel="back" data-icon="back">Regresar</a></li>
+        </ul>
+        </div>
+    </div>
+     <div>
 
 
      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
