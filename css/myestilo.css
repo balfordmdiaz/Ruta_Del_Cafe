@@ -63,10 +63,10 @@
     float: right;
 }
 
-.select > li
-{  
-   
-  
+
+.navegacion2
+{
+    margin-bottom: 20%;
 }
 
 /*
@@ -110,6 +110,7 @@
     transition:all .3s;
 }
 */
+
 /*-------------Banner--------------------------------------*/
 
 header
