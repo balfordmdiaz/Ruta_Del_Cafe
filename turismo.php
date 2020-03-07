@@ -40,7 +40,8 @@
 
      <div id="menu">
         <div id="icono">
-              <img src="img/cafe.png" alt="">
+          <a href="index.php"> <img src="img/cafe.png" style="width: 50px; height: 50px">
+                </a>
         </div>
 
       <h2 id="titulo" style="font-weight: bold; font-family: 'Trade Winds', cursive;">Ruta del Cafe</h2>
@@ -58,8 +59,8 @@
      
      <header>
      <div id="content-departamentos">
-     
-     <ul class="" data-role="listview" data-inset="true" data-theme="c">
+     <h2 style="font-family: 'Trade Winds', cursive;">Turismo</h2>
+     <ul class="navegacion2" data-role="listview" data-inset="true" data-theme="c">
      
      <!--------------Lista de hoteles------------------>
 
@@ -67,8 +68,8 @@
                       while ($fila = mysql_fetch_array($peticion)){
                       echo '
                            <li>
-                           <h1>'.utf8_encode($fila["nombre"]).'</h1>
-                           <h3>Actividades:</h3>
+                           <h1 style="color:blue;">'.utf8_encode($fila["nombre"]).'</h1>
+                           <h3 style="color:#DF73FF;">Actividades:</h3>
                            <p>'.utf8_encode($fila["atractivocultural"]).'</p>
                            </li>
                         ';
@@ -101,7 +102,7 @@
         </div>
     </div>
     
-     <div>
+    </div>
 
      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

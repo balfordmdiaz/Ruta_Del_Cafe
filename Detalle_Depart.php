@@ -40,7 +40,8 @@
 
      <div id="menu">
         <div id="icono">
-              <img src="img/cafe.png" alt="">
+          <a href="index.php"> <img src="img/cafe.png" style="width: 50px; height: 50px">
+                </a>
         </div>
 
         <h2 id="titulo" style="font-weight: bold; font-family: 'Trade Winds', cursive;">Ruta del Cafe</h2>
@@ -81,22 +82,31 @@
      </div>
 
      <div id="menu_elecciones">
-          <nav class="navegacion">
+          <nav class="navegacion2">
             <ul class="select" data-role="listview" data-inset="true"  data-theme="b">
               <?php
               echo '
-                <li><a href="hoteles.php?iddepartamento='.$id["iddepartamento"].'">Hoteles</a></li>
-                <li><a href="restaurantes.php?iddepartamento='.$id["iddepartamento"].'">Restaurantes</a></li>
-                <li><a href="turismo.php?iddepartamento='.$id["iddepartamento"].'">Lugares Turisticos</a></li>
+                <li><a href="hoteles.php?iddepartamento='.$id["iddepartamento"].'">
+                <img src="img/hotel.png" style="width: 50px; height: 50px;" alt="">
+                Hoteles
+                </a></li>
+                <li><a href="restaurantes.php?iddepartamento='.$id["iddepartamento"].'">
+                <img src="img/food.png" style="width: 50px; height: 50px;" alt="">
+                Restaurantes</a></li>
+                <li><a href="turismo.php?iddepartamento='.$id["iddepartamento"].'">
+                <img src="img/tourism.png" style="width: 50px; height: 50px;" alt="">
+                Turismo</a></li>
                 ';
               ?>
             </ul>
           </nav>
         </div>
 
-        </header>
+        
 
-        <footer class="footer">
+     </header>
+
+     <footer class="footer">
          <p>Copyright - 2020 Nicaragua Derechos reservados</p>
          
          <a href="#"><i class="fa fa-facebook-official" style="color:#0066D9"></i></a>
@@ -114,8 +124,6 @@
         </div>
     </div>
 
-    </div>
-     <div>
      <div>
 
      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

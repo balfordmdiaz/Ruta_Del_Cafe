@@ -63,11 +63,6 @@
     float: right;
 }
 
-.select > li
-{  
-   
-  
-}
 
 /*
 .navegacion
@@ -110,6 +105,7 @@
     transition:all .3s;
 }
 */
+
 /*-------------Banner--------------------------------------*/
 
 header
@@ -177,7 +173,7 @@ header
 
 .footer
 {
-    margin-top: 100px;
+    margin-top: 250px;
     width: 100%;
     text-align: center;
 }
